@@ -311,6 +311,8 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-text);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .icon-footer {

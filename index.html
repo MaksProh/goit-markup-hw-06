@@ -69,9 +69,8 @@
           </button>
           <h2 class="desc-form">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="form-modal">
-            <div class="container-input">
               <div class="container-initials">
-                <label class="initials-input" for="name">Имя
+                <label for="name">Имя
                   <svg class=" input-svg">
                     <use href="./img/icons/sprite.svg#icon-name"></use>
                   </svg>
@@ -79,7 +78,7 @@
                 <input class="input-modal" type="text" name="name" id="name">
               </div>
               <div class="container-initials">
-                <label class="initials-input" for="telnomber">Телефон
+                <label for="telnomber">Телефон
                 <svg class=" input-svg">
                   <use href="./img/icons/sprite.svg#icon-call"></use>
                 </svg>
@@ -87,7 +86,7 @@
               <input class="input-modal" type="tel" name="telnomber" id="telnomber">
               </div>
               <div class="container-initials">
-                <label class="initials-input" for="post">Почта
+                <label for="post">Почта
                 <svg class=" input-svg">
                   <use href="./img/icons/sprite.svg#icon-post"></use>
                 </svg>
@@ -95,12 +94,10 @@
               <input class="input-modal" type="email" name="post" id="post">
               </div>
               <div class="container-initials">
-                <label class="initials-input" for="text">Комментарий
+                <label for="text">Комментарий
                 </label>
                 <textarea class="input-modal input-text" placeholder="Введите текст" name="text" id="text" rows="10"></textarea>
-              </div>
-            </div>
-            <!-- <div class="container-contract"> -->
+              </div>            <!-- <div class="container-contract"> -->
               <!-- <div class="container-chek"> -->
               <label for="">
                 <input type="checkbox" name="contract" >
@@ -475,6 +472,12 @@
             </li>
           </ul>
         </div>
+        <form class="form-footer">
+          <h3 class="connect">Подпишитесь на рассылку</h3>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <button type="submit">Подписаться</button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

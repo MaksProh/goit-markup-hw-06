@@ -75,11 +75,6 @@
   flex-direction: column;
 }
 
-.container-input {
-  display: flex;
-  flex-direction: column;
-}
-
 .container-initials {
   position: relative;
   display: flex;
@@ -106,7 +101,7 @@
   line-height: 1.87;
 }
 
-.initials-input {
+.container-initials label {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -131,9 +126,13 @@ textarea {
   height: 120px;
 }
 
-.input-text {
+.container-initials textarea {
   padding: 12px 16px;
   min-height: 120px;
+}
+
+.container-initials textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-modal .container-initials:not(:last-child) {
