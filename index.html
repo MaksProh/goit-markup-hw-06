@@ -21,7 +21,7 @@
           <a class="webstudio-nav" href="#"><span class="web">Web</span>Studio</a>
           <ul class="nav-link">
               <li class="item-studio">
-                <a class="link link-item" href="./index.html">Студия</a>
+                <a class="link-item link-first" href="./index.html">Студия</a>
               </li>
               <li class="item-studio">
                 <a class="link link-item" href="./portfolio.html">Портфолио</a>
@@ -67,8 +67,60 @@
               <use href="./img/icons/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <h2 class="desc-form">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form-modal">
+            <div class="container-input">
+              <div class="container-initials">
+                <label class="initials-input" for="name">Имя
+                  <svg class=" input-svg">
+                    <use href="./img/icons/sprite.svg#icon-name"></use>
+                  </svg>
+                </label>
+                <input class="input-modal" type="text" name="name" id="name">
+              </div>
+              <div class="container-initials">
+                <label class="initials-input" for="telnomber">Телефон
+                <svg class=" input-svg">
+                  <use href="./img/icons/sprite.svg#icon-call"></use>
+                </svg>
+              </label>
+              <input class="input-modal" type="tel" name="telnomber" id="telnomber">
+              </div>
+              <div class="container-initials">
+                <label class="initials-input" for="post">Почта
+                <svg class=" input-svg">
+                  <use href="./img/icons/sprite.svg#icon-post"></use>
+                </svg>
+              </label>
+              <input class="input-modal" type="email" name="post" id="post">
+              </div>
+              <div class="container-initials">
+                <label class="initials-input" for="text">Комментарий
+                </label>
+                <textarea class="input-modal input-text" placeholder="Введите текст" name="text" id="text" rows="10"></textarea>
+              </div>
+            </div>
+            <!-- <div class="container-contract"> -->
+              <!-- <div class="container-chek"> -->
+              <label for="">
+                <input type="checkbox" name="contract" >
+              <svg class="checkbox">
+                <use href="./img/icons/sprite.svg#icon-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю<a class="contract" href="*">Условия договора</a>
+              </label>
+              <!-- </div> -->
+              <!-- <div class="condition">
+              <p>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="contract" href="*">Условия договора</a>
+              </p>
+              </div> -->
+            <!-- </div> -->
+            <button class="btn-modal" type="submit">Отправить</button>
+          </form>
         </div>
-      </div>
+        </div>
       <section>
         <div class="container container-advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -128,30 +180,30 @@
         <div class="container container-work">
           <h2 class="work">Чем мы занимаемся</h2>
           <ul class="work-img">           
+            <li class="item">
             <div class="container-desc">
-                <li class="item">
                   <div class="thumb-work">
                     <img class="img" src="./img/img1.jpg" alt="img1" />
                   </div>
                   <p class="descript">десктопные приложения</p>
-                </li>
-            </div>
-            <div class="container-desc">
-                <li class="item">
+                </div>
+              </li>
+              <li class="item">
+                  <div class="container-desc">
                   <div class="thumb-work">
                     <img src="./img/img2.jpg"  alt="img2" />
                   </div>
                   <p class="descript">мобильные приложения</p>
-                </li>
-            </div>
-            <div class="container-desc">
+                </div>
+              </li>
               <li class="item">
+                <div class="container-desc">
                 <div class="thumb-work">
                   <img src="./img/img3.jpg"  alt="img3" />
                 </div>
                 <p class="descript">дизайнерские решения</p>
-              </li>
-            </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>

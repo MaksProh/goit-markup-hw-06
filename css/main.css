@@ -26,7 +26,12 @@ h1 {
   width: 1600px;
   padding: 200px 0;
   margin: 0 auto;
-  background-image: url(../img/fonhero.jpg);
+  background-image: url(../img/fonhero.jpg),
+    linear-gradient(
+      to left,
+      var(--background-hero-next) 40%,
+      var(--background-hero)
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-hero);
@@ -87,10 +92,13 @@ h1 {
 
 .list-advantages {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .list-advantages .item {
-  width: calc((100% - 60px) / 4);
+  display: block;
+  width: 270px;
+  flex-basis: calc((100% - 60px) / 4);
 }
 
 .list-advantages .item:not(:last-child) {
@@ -103,6 +111,8 @@ h1 {
 }
 
 .container-icon {
+  display: inline-block;
+  width: inherit;
   height: 120px;
   background-color: var(--background-advantages);
   border-radius: 4px;
@@ -128,11 +138,11 @@ h1 {
   margin: 0;
 }
 
-.work-img .container-desc {
+.work-img .item {
   width: calc((100% - 60px) / 3);
 }
 
-.work-img .container-desc:not(:last-child) {
+.work-img .item:not(:last-child) {
   margin-right: 30px;
 }
 

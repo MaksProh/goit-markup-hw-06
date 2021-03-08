@@ -8,6 +8,7 @@
   --bold-black: #000000;
   --background-btn: #f5f4fa;
   --background-descript: rgba(47, 48, 58, 0.8);
+  --background-hero-next: #c4c4c4;
   --background-hero: rgba(47, 48, 58, 0.4);
   --background-advantages: #f5f4fa;
   --color-link: #afb1b8;
@@ -16,6 +17,8 @@
   --border-close: rgba(0, 0, 0, 0.1);
   --background-modal: rgba(0, 0, 0, 0.2);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --background-project: rgba(33, 150, 243, 0.9);
+  --border-nav-portfolio: #ececec;
 }
 
 .nav .link {
@@ -29,6 +32,18 @@
   line-height: 1.14;
 
   transition: color 250ms var(--timing-function);
+}
+
+.link-first {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--blu-text);
+  text-decoration: none;
 }
 
 .nav .link:hover,
@@ -95,6 +110,7 @@
 
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   color: var(--grey-text);
 
   transition: color 250ms var(--timing-function);
@@ -151,6 +167,10 @@ button {
 
 .link-item:hover::after,
 .link-item:focus::after {
+  opacity: 1;
+}
+
+.link-first::after {
   opacity: 1;
 }
 
