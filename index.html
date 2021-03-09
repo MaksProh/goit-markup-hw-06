@@ -68,44 +68,38 @@
             </svg>
           </button>
           <h2 class="desc-form">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="form-modal">
-              <div class="container-initials">
-                <label for="name">Имя
-                  <svg class=" input-svg">
-                    <use href="./img/icons/sprite.svg#icon-name"></use>
-                  </svg>
-                </label>
-                <input class="input-modal" type="text" name="name" id="name">
-              </div>
-              <div class="container-initials">
-                <label for="telnomber">Телефон
-                <svg class=" input-svg">
-                  <use href="./img/icons/sprite.svg#icon-call"></use>
-                </svg>
-              </label>
+          <form class="form-modal" autocomplete="off">
+            <label class="container-initials">
+              <span class="input-name">Имя</span>
+              <input class="input-modal" type="text" name="name">
+              <svg class=" input-svg">
+                <use href="./img/icons/sprite.svg#icon-name"></use>
+              </svg>
+            </label>
+            <label class="container-initials"><span class="input-name">Телефон</span>
               <input class="input-modal" type="tel" name="telnomber" id="telnomber">
-              </div>
-              <div class="container-initials">
-                <label for="post">Почта
-                <svg class=" input-svg">
-                  <use href="./img/icons/sprite.svg#icon-post"></use>
-                </svg>
-              </label>
+              <svg class=" input-svg">
+                <use href="./img/icons/sprite.svg#icon-call"></use>
+              </svg>
+            </label>
+            <label class="container-initials"><span class="input-name">Почта</span>
               <input class="input-modal" type="email" name="post" id="post">
-              </div>
-              <div class="container-initials">
-                <label for="text">Комментарий
-                </label>
-                <textarea class="input-modal input-text" placeholder="Введите текст" name="text" id="text" rows="10"></textarea>
-              </div>            <!-- <div class="container-contract"> -->
-              <!-- <div class="container-chek"> -->
-              <label for="">
-                <input type="checkbox" name="contract" >
+              <svg class=" input-svg">
+                <use href="./img/icons/sprite.svg#icon-post"></use>
+              </svg>
+            </label>
+            <label class="container-initials"><span class="input-name">Комментарий</span>
+              <textarea class="input-modal input-text" placeholder="Введите текст" name="text" id="text" rows="10"></textarea>
+            </label>
+            <div class="container-contract">           
+              <input type="checkbox" name="contract" id="contract">
+              <label for="contract">
+                Соглашаюсь с рассылкой и принимаю<a class="contract" href="*">Условия договора</a>
+              </label>
               <svg class="checkbox">
                 <use href="./img/icons/sprite.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю<a class="contract" href="*">Условия договора</a>
-              </label>
+            </div>
               <!-- </div> -->
               <!-- <div class="condition">
               <p>
@@ -475,11 +469,14 @@
         <form class="form-footer">
           <h3 class="connect ">Подпишитесь на рассылку</h3>
           <div class="container-form">
-          <input class="input-footer" type="email" name="email" id="email" placeholder="Email">
-          <button class="btn-footer" type="submit">Подписаться</button>
+          <input class="input-footer" type="email" name="email" id="email" placeholder="E-mail">
+          <button class="btn-footer" type="submit">Подписаться
+            <svg class="icon-send">
+              <use href="./img/icons/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
           </div>
-          <!-- <div class="container-form"> -->
-          <!-- </div> -->
+
         </form>
       </div>
     </footer>

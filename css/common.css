@@ -348,16 +348,31 @@ h2 {
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: var(--white-text);
   background-color: inherit;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .container-form {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.form-footer input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-transparent-text);
+  letter-spacing: 0.03em;
+}
+
 .btn-footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,4 +391,10 @@ h2 {
   font-size: 16px;
   line-height: 1.87;
   color: var(--white-text);
+}
+
+.icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
