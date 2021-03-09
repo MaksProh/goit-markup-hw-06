@@ -92,7 +92,12 @@
   border-color: var(--blu-text);
 }
 
-.input-modal:hover ~ .input-svg {
+.input-modal:focus {
+  outline: none;
+}
+
+.input-modal:hover ~ .input-svg,
+.input-modal:focus ~ .input-svg {
   fill: var(--blu-text);
 }
 
@@ -173,6 +178,10 @@ textarea {
 
 .contract {
   color: var(--blu-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .container-contract {
@@ -182,29 +191,42 @@ textarea {
   padding: 0;
   margin: 0;
   margin-top: 20px;
-}
-
-.condition {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  margin-left: 7px;
-}
-
-.container-chek {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  /* border: 1px solid #212121; */
-
-  /* background-color: teal; */
+  color: var(--grey-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .checkbox {
-  /* position: absolute; */
+  margin-right: 7px;
   width: 16px;
   height: 15px;
-  /* border: 3px solid #212121; */
-  border-radius: 3px;
-  opacity: 1;
+  border: 2px solid var(--black-text);
+  border-radius: 2px;
+}
+
+.checkbox use {
+  display: none;
+}
+
+.check:checked + .checkbox {
+  border: none;
+}
+
+.check:checked + .checkbox use {
+  display: inline-block;
+}
+
+.check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
