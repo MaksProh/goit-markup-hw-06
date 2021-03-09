@@ -57,7 +57,8 @@
     fill 250ms var(--timing-function);
 }
 
-.close:hover .modal-svg {
+.close:hover .modal-svg,
+.close:focus .modal-svg {
   fill: currentColor;
 }
 
