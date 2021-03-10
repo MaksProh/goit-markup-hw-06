@@ -21,6 +21,10 @@
   --border-nav-portfolio: #ececec;
 }
 
+address {
+  font: inherit;
+}
+
 .nav .link {
   display: inline-block;
   padding-top: 32px;
