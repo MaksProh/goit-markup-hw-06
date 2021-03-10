@@ -64,14 +64,17 @@ body {
   display: flex;
 }
 
+/* НАШИ ПРОЕКТЫ */
+
 .project {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-/* НАШИ ПРОЕКТЫ */
 .fon {
   position: relative;
 }
@@ -123,20 +126,20 @@ body {
 }
 
 .project .project-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 26px;
-  margin-bottom: 26px;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
   border: 1px solid var(--color-border-portfolio);
   padding: 0;
 }
 
-.project .project-item:nth-child(3n) {
+/* .project .project-item:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
-.project .project-item:nth-last-child(- n + 3) {
+/* .project .project-item:nth-last-child(- n + 3) {
   margin-bottom: 0;
-}
+} */
 
 .project-desc {
   padding: 20px 24px;
