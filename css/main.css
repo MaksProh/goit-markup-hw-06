@@ -217,8 +217,6 @@ h1 {
 }
 
 .fon-command {
-  width: 1600px;
-  margin: 0 auto;
   padding: 94px 0px;
   background-color: var(--background-btn);
 }

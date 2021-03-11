@@ -131,9 +131,7 @@ address {
 }
 
 .fon-footer {
-  width: 1600px;
   background-color: var(--grey-fone);
-  margin: 0 auto;
   padding: 60px 0;
 }
 
